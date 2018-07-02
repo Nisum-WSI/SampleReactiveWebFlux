@@ -60,6 +60,7 @@ public class ReactiveWebFluxResource {
 	@GetMapping(produces=MediaType.TEXT_EVENT_STREAM_VALUE ,value="/get_all_test_Customer_Details")
 	Disposable getAllTestCustomerProfileDetails(){
 
+	
 		//Flux<Long> durationTime=Flux.interval(Duration.ofSeconds(1));
 		return sampleReactiveWebFluxClient.getAllTestCustomerProfileDetails();
 		//return Flux.zip(profileData, durationTime).repeat().map(n->n);
